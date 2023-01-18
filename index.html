@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="encriptador.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Source+Code+Pro:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Source+Code+Pro:ital@1&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <div class="contenedor">
+        <img class="imglogo" src="images/alura.png" alt="Logo Alura">
+        <header class="titulo">
+            <marquee behavior="alternate" direction=""><h1 class="glitch" data-text="ENCRIPTAR Y DESENCRIPTAR">ENCRIPTAR Y DESENCRIPTAR</h1></marquee>
+        </header>
+
+        <main class="contenido">
+            <textarea id="textareaingresarTexto" class="textareaingresarTexto" cols="60" rows="35" placeholder="Ingresar mensaje" required autofocus></textarea>
+            <input type="button" class="btnEncriptar" value=" Encriptar🔒" onclick="encriptar()">
+            <input type="button" class="btnDesencriptar" value="Desencriptar🔓" onclick="desencriptar()">
+        </main>
+                
+        <aside class="sidebar">
+            <img id="imagen-salida" class="imgSalida" src="images/NoEncontrada.png" alt="texto no encontrado">
+            <h1 id="texto-Salida" class="textoSalida">Ningun mensaje se ha encontrado</h1>
+            <textarea id="textareaSalirTexto" class="textareaSalirTexto" name="valorsalida" cols="40" rows="18" readonly></textarea>
+            <input type="button" class="btnCopiar" value="Copiar📑" id="btnCopiar" onclick="copiarTexto()" disabled>
+            <input type="button" class="btnLimpiar" value="Limpiar🧹" id="btnLimpiar" onclick="limpiarTexto()">
+        </aside>
+
+        <footer class="foot">
+            <p> 💻 Create by Andrés Felipe Gómez Herrera</p>
+        </footer>
+
+        <div class="social-bar">
+            <a href="https://www.facebook.com/FeloOneCrew/" class="icon icon-facebook" target="_blank"></a>
+            <a href="https://twitter.com/FeloOneCrew" class="icon icon-twitter" target="_blank"></a>
+            <a href="https://www.youtube.com/c/FELOONECREW" class="icon icon-youtube" target="_blank"></a>
+            <a href="https://www.instagram.com/felo_1upcrew/" class="icon icon-instagram" target="_blank"></a>
+            <a href="https://www.linkedin.com/in/andres-felipe-gomez-herrera/" class="icon icon-linkedin" target="_blank"></a>
+            <a href="https://github.com/FeloOneCrew/" class="icon icon-github" target="_blank"></a>
+        </div>
+    </div>
+</body>
+</html>
