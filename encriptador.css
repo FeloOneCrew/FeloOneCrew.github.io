@@ -521,8 +521,8 @@ body
   .imglogo 
   {
     display: inline-block;
-    width: 182px;
-    height: 120px;
+    width: 142px;
+    height: 150px;
     align-items: end;
     justify-content: center;
   }
@@ -548,7 +548,18 @@ body
                           "contenido contenido contenido contenido contenido"
                           "sidebar sidebar sidebar sidebar sidebar"
                           "foot foot foot foot foot";
-  }  
+  }
+  
+  .contenido .btnEncriptar 
+  {
+    width: 35%;
+  }
+
+
+.contenido .btnDesencriptar 
+  {
+    width: 35%;
+  }
 }
 
 @media screen and (max-width:964px) 
